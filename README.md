@@ -1,2 +1,2 @@
-# -Grid-Maker
+# Grid-Maker
 Assignment 3
