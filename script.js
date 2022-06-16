@@ -4,8 +4,28 @@ let numCols = 0;
 let colorSelected; 
 
 // Add a row
-function addR() {
-    alert("Clicked Add Row"); // Replace this line with your code.
+function addR() 
+{   //Once use this function number of rows should increase
+    numRows++;
+    //create new row name NewRow
+    let row = document.createElement("tr");
+    row.classList.add("NewRow");
+
+    if(numCols === 0)
+    {
+        //To have first Row first Coloumn must exist initially
+        numCols++;
+    }
+    for(let i = 0; i < numCols; i++)
+    {   //Create new cell for every coloumns
+        let cell = document.createElement("td");
+        cell.classList.add("NewCell");
+        //Add cell accordingly
+        row.appendChild(cell);
+        console.log(numCols);
+    }
+    //Add the row to grid
+    document.getElementById("grid").appendChild(row)
 }
 
 // Add a column
