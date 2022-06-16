@@ -1,6 +1,8 @@
 # Grid-Maker
 Assignment 3
 
+[Website Link](https://huntercs39548group1.github.io/Grid-Maker/)
+
 Team members:
 
 Jinyi Tan - remit233
