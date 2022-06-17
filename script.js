@@ -50,11 +50,17 @@ function addC() {
 
 // Remove a row
 function removeR() {
+    // Check if there are any rows
     if(numRows > 0){
         numRows--;
         //Remove last row from grid
         let row = document.getElementsByClassName("NewRow")[numRows];
         row.parentNode.removeChild(row);
+    }
+
+    // reset column count if removing last remaining row
+    if(numRows === 0){
+        numCols = 0;
     }   
 }
 
@@ -71,7 +77,13 @@ function selectColor() {
 
 // Fill all uncolored cells
 function fillU() {
-    alert("Clicked Fill All Uncolored"); // Replace this line with your code.
+    // Get all the cells in the grid
+    let cells = document.querySelectorAll("td");
+
+    // Change the color of the cells to uncolored
+    for (let i = 0; i < numRows * numCols; i++) {
+        cells[i].style.backgroundColor = "white";
+    }
 }
 
 // Fill all cells
