@@ -99,5 +99,15 @@ function fillAll() {
 
 // Clear all cells
 function clearAll() {
-    alert("Clicked Clear All"); // Replace this line with your code.
+    //Get all cells in the grid by row
+    let row = document.getElementsByTagName("tr");
+    //Loop for each row
+    for(const roworder of row){
+        //For each row get each coloumn of box
+        let col = roworder.getElementsByTagName("td");
+        //Loop over the columns and set the background color to "" which is no color.
+        for(let i=0; i<numCols; i++){
+            col[i].style.background = "";
+        }
+    }
 }
