@@ -50,7 +50,12 @@ function addC() {
 
 // Remove a row
 function removeR() {
-    alert("Clicked Remove Row"); // Replace this line with your code.
+    if(numRows > 0){
+        numRows--;
+        //Remove last row from grid
+        let row = document.getElementsByClassName("NewRow")[numRows];
+        row.parentNode.removeChild(row);
+    }   
 }
 
 // Remove a column
