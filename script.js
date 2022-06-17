@@ -30,7 +30,7 @@ function addR() {
 // Add a column
 function addC() {
     // Increase column count when clicked
-    numCols++; 
+    numCols++;
 
     // Create a new row when there are 0 row
     if (numRows == 0) {
@@ -71,7 +71,13 @@ function fillU() {
 
 // Fill all cells
 function fillAll() {
-    alert("Clicked Fill All"); // Replace this line with your code.
+    // Get all the cells in the grid
+    let col = document.querySelectorAll("td");
+
+    // Change the color of the cells to the selected color
+    for (let i = 0; i < numRows * numCols; i++) {
+        col[i].style.backgroundColor = colorSelected;
+    }
 }
 
 // Clear all cells
