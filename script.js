@@ -19,6 +19,7 @@ function addR() {
         //Create new cell for every coloumns
         let cell = document.createElement("td");
         cell.classList.add("NewCell");
+        cell.onclick = () => colorCell(cell); // allows cell to be colored when clicked
         //Add cell accordingly
         row.appendChild(cell);
         console.log(numCols);
@@ -45,6 +46,7 @@ function addC() {
         let col = document.querySelectorAll("tr")[i].insertCell();
         // Give the cell a class
         col.classList.add("NewCell");
+        col.onclick = () => colorCell(col); // allows cell to be colored when clicked
     }
 }
 
@@ -113,4 +115,14 @@ function clearAll() {
         }
     }
 }
+
+// Color the cell to the selected color
+function colorCell(cell) {
+    // Change the color of the cell to the selected color
+    cell.style.backgroundColor = colorSelected;
+}
+
+    
+
+
 
