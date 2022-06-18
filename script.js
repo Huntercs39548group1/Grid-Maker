@@ -80,9 +80,11 @@ function fillU() {
     // Get all the cells in the grid
     let cells = document.querySelectorAll("td");
 
-    // Change the color of the cells to uncolored
+    // Change the color of the cells from uncolored to the selected color
     for (let i = 0; i < numRows * numCols; i++) {
-        cells[i].style.backgroundColor = "white";
+        if(cells[i].style.backgroundColor === ""){
+            cells[i].style.backgroundColor = colorSelected;
+        }
     }
 }
 
@@ -111,3 +113,4 @@ function clearAll() {
         }
     }
 }
+
