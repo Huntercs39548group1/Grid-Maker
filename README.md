@@ -5,7 +5,7 @@ Assignment 3
 
 Team members:
 
-- Jinyi Tan - remit233
-- Shi Wei Zheng - dive0
-- Sergey Kisselev - skissele
-- Junior Tenezaca - TJunior1323
+- Jinyi Tan - remit233 {Contribute on: addR, clearAll function}
+- Shi Wei Zheng - dive0 {Contribute on: addC, fillAll function}
+- Sergey Kisselev - skissele {Contribute on: removeR, fillU, colorCell function}
+- Junior Tenezaca - TJunior1323 {Contribute on: removeC, selectColor function}
